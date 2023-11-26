@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="style.css">
+<div class="head">
+    <div class="navbar" id="names">
+        <div class="main" >
+            ACEDMICS
+        </div>
+        <a href="#" class="nav">HOME</a>
+        <a href="#" class="nav">COURSES</a>
+        <a href="#" class="nav">NEWS</a>
+        <a href="#" class="nav">CONTACT</a>
+        <a href="#" class="nav">GALLERY</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+<div class="form">
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+</head>
+<body>
+
+<h1 class="form-heading"> Admission Form</h1>
+
+
+<form action="submit.php" method="post"class="main-form">
+    <label for="name">Full Name:</label>
+    <input type="text"class="form-layout" id="name" name="name" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" class="form-layout"id="dob" name="dob" required><br><br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male"> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email"class="form-layout" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel"class="form-layout" id="phone" name="phone" required><br><br>
+
+    <label for="program">Program of Interest:</label>
+    <select id="program" name="program">
+        <option value="Computer Science">Computer Science</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Business Administration">Business Administration</option>
+        <option value="Biology">Biology</option>
+    </select><br><br>
+
+    <label for="documents">Upload Documents (Transcripts, Certificates, etc.):</label>
+    <input type="file" id="documents" name="documents" accept=".pdf,.doc,.docx" multiple><br><br>
+
+    <label for="message">Additional Information:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I accept the terms and conditions.</label><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
+</div>
