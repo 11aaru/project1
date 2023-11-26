@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar section */
+
+.navbar {
+    background-color: rgb(11 11 78);
+    height: 34px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2px;
+    padding: 18px 23px;
+    position:static;
+}
+
+.main{
+    margin-left: 0px;
+    font-weight: 700;
+    color: white;
+    border: 2px soild white;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: -1px;
+   
+
+}
+
+.navbar a:hover {
+
+    color: yellow
+}
+.icon{
+    display: none;
+}
+
+.log-in {
+    background-color: yellow;
+    padding: 4px 11px;
+    border-radius: 34px;
+}
+
+.log-in a {
+    color: rgb(11 11 78);
+}
+
+.log-in a:hover {
+    color: rgb(11 11 78);
+
+}
+
+/* continer section */
+
+#container {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#container::before {
+    content: "";
+    background: url("students.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 645px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+}
+.left{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:149px; 
+    padding: 2px 2px;
+}
+
+.left p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.5rem;
+    color: white;
+}
+.left-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2px 2px;
+    padding: 11px 11px;
+
+}
+.left-para p{
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 2px;
+    padding: 11px 5px;
+}
+.btnn{
+    color: white;
+    background-color: rgb(11 11 78);
+    margin: auto;
+    padding: 5px 4px;
+    border: 2px solid rgb(11 11 78);
+}
+.btnn:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+}
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px black;
+}
+.simm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    box-sizing: border-box;
+
+}
+.sim{
+    background-color: rgb(11 11 78);
+    margin: 21px 4px;
+    padding: 12px 16px;
+    width: 377px;
+    height: 189px;
+    box-sizing: border-box;
+    opacity: 0.87;
+}
+.sim h4{
+    color: white;
+    margin: 2px 2px;
+    padding: 12px 12px;
+
+}
+.sim p{
+    color: white;
+    padding: 12px 12px;
+    text-align: left;
+}
+
+/* bottom part */
+
+.bottom-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 233px;
+    width: auto;
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+.bottom-right p{
+    font-size:0.7rem ;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 333px;
+    height: 233px;
+}
+/* responsive */
+@media screen and (max-width:1130px ){
+    .navbar a:not(.log-in a){
+        display: none;
+    }
+    .icon{
+        display: block;
+        color: aliceblue;
+    }
+
+
+    .navbar.responsive{
+        position: relative;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .navbar.responsive a{
+         display: none;
+    }
+    
+    .navbar.responsive a.icon{
+        display: absolute;
+    }
+    
+    .simm{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+    
+/* <---form section---> */
+ 
+body{
+    justify-content: center;
+}
+.form-heading{
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.main-form{
+    margin-top: 22px;
+}
+.form{
+  
+    width: 50vw;
+   
+    margin: 44px 256px;
+    padding: 12px 12px;
+    text-align: left;
+    justify-content: space-evenly;
+    border: 2px solid black;
+
+}
+.form-layout{
+    background-color: red;
+}
